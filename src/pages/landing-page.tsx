@@ -27,28 +27,6 @@ export function LandingPage() {
               구경하러 가기
             </Link>
           </div>
-
-          <div className="absolute bottom-0 right-0 w-full max-w-xl">
-            <div className="relative h-80">
-              {/* Brown Hill */}
-              <div className="absolute bottom-0 h-32 w-full rounded-t-full bg-amber-200"></div>
-              {/* Buildings */}
-              <div className="absolute bottom-20 right-20 h-32 w-24 bg-amber-100"></div>
-              <div className="absolute bottom-24 right-32 h-24 w-20 bg-amber-100"></div>
-              {/* Trees */}
-              <div className="absolute bottom-32 right-10 h-16 w-16 rounded-full bg-green-500"></div>
-              <div className="absolute bottom-32 right-0 h-12 w-12 rounded-full bg-green-500"></div>
-              {/* Panda */}
-              <div className="absolute bottom-32 right-40">
-                <div className="relative h-32 w-32">
-                  <div className="absolute h-24 w-24 rounded-full bg-white"></div>
-                  <div className="absolute top-0 h-8 w-8 rounded-full bg-black"></div>
-                  <div className="absolute top-0 right-0 h-8 w-8 rounded-full bg-black"></div>
-                  <div className="absolute bottom-4 left-8 h-4 w-8 rounded-full bg-black"></div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
       <section className="px-4 py-20">
