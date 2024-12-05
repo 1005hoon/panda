@@ -19,15 +19,8 @@ export async function signIn(email: string, password: string) {
   const data = await response.json()
 
   if (response.ok === false) {
-    if (response.status === 400) {
-      throw new Error('잘못된 입력값이에요')
-    } else if (response.status === 401) {
-      throw new Error('이메일 또는 비밀번호가 틀렸어요')
-    } else if (response.status === 404) {
-      throw new Error('존재하지 않는 사용자에요')
-    } else {
-      throw new Error('서버 에러가 발생했어요')
-    }
+    const errorMessage = data.message || '로그인 중 에러가 발생했어요'
+    throw new Error(errorMessage)
   }
 
   return data

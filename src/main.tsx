@@ -22,15 +22,6 @@ const router = createBrowserRouter([
         path: '/logout',
         element: <div>logout Page</div>
       }
-      // {
-      //   path: '/products',
-      //   element: <div>protected routes</div>,
-      //   children: [
-      //     { index: true, path: '/', element: <div>products</div> },
-      //     { path: '/register', element: <div>신규 프로덕트 등록</div> },
-      //     { path: '/details/:id', element: <div>제품 상세 페이지</div> }
-      //   ]
-      // }
     ]
   }
 ])
