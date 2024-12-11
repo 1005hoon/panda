@@ -6,6 +6,7 @@ import './index.css'
 import { LandingPage } from './pages/landing-page.tsx'
 import { LoginPage } from './pages/login.tsx'
 import ProductLayout from './components/product-layout.tsx'
+import ProductsPage from './pages/products-page.tsx'
 
 const router = createBrowserRouter([
   {
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
         path: '/products',
         element: <ProductLayout />,
         children: [
-          { index: true, element: <div>상품 목록</div> },
+          { index: true, element: <ProductsPage /> },
           { path: 'create', element: <div>상품 생성</div> },
           { path: 'details/:id', element: <div>상품 상세</div> }
         ]
